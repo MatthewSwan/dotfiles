@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
+p ARGV
 
+=begin
 ARGV.each do |arg|
   p arg
 end
+=end

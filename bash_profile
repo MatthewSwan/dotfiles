@@ -1,4 +1,6 @@
+export HOME="${HOME-/Users/MatthewSwan}"
 # This file goes in ~/.bash_profile (the tilde is your home directory)
+export PATH="/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
 # Environment Variables
   export EDITOR='atom'                          # Set to your text editor
@@ -6,7 +8,7 @@
 
 # Load chruby
   source "/usr/local/share/chruby/chruby.sh"
-  chruby 2.2.2 # Default
+  chruby 2.3.0 # Default
 
 # ALIASES
   # path

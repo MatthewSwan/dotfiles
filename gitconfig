@@ -1,7 +1,13 @@
 [user]
-  name             = YOUR NAME (ie Josh Cheek)
-  email            = YOUR EMAIL (ie me@gmail.com)
-  username         = YOUR GITHUB USERNAME (ie JoshCheek)
+	name             = Matthew Swan
+	email            = swanm86@gmail.com
+  username         = MatthewSwan
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
 [color]
   ui               = true
 [color "diff"]
@@ -17,7 +23,7 @@
 [push]
   default          = upstream
 [core]
-  excludesfile     = ~/.gitignore
+	excludesfile     = ~/.gitignore_global
   editor           = vim
 [status]
   submodulesummary = true
